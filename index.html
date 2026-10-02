@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="page">
+
+        <!-- ==============================
+             HEADER
+        =============================== -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-mark">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h1>My to-do</h1>
+
+                    <p>
+                        A little plan for a better day
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="name-area">
+
+                <span class="small-label">
+                    YOUR NAME
+                </span>
+
+                <div class="name-input-area">
+
+                    <input
+                        type="text"
+                        id="nameInput"
+                        placeholder="Enter your name"
+                    >
+
+                    <button
+                        onclick="saveName()"
+                        class="save-name-btn"
+                    >
+                        Save
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==============================
+             WELCOME MESSAGE
+        =============================== -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <p class="date-label">
+                    YOUR PERSONAL TASK SPACE
+                </p>
+
+                <h2 id="welcomeMessage">
+                    Welcome! Let's get things done.
+                </h2>
+
+                <p class="welcome-text">
+                    Don't worry about doing everything at once.
+                    Just start with one task.
+                </p>
+
+            </div>
+
+            <div class="little-note">
+
+                <span><img src="images/to-do.png"></span>
+                <p>
+                    Small steps<br>
+                    count too.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             OVERVIEW
+        =============================== -->
+
+        <section class="overview">
+
+            <div class="section-title">
+
+                <span>
+                    TODAY AT A GLANCE
+                </span>
+
+                <div class="title-line"></div>
+
+            </div>
+
+
+            <div class="overview-grid">
+
+
+                <!-- DATE -->
+
+                <div class="info-box date-box">
+
+                    <span class="box-label">
+                        PLAN FOR
+                    </span>
+
+                    <label for="taskDate">
+                        Choose a date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                    >
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="info-box">
+
+                    <span class="box-label">
+                        ALL TASKS
+                    </span>
+
+                    <strong id="totalCount">
+                        0
+                    </strong>
+
+                    <span class="box-description">
+                        tasks in your list
+                    </span>
+
+                </div>
+
+
+                <!-- COMPLETED -->
+
+                <div class="info-box completed-box">
+
+                    <span class="box-label">
+                        FINISHED
+                    </span>
+
+                    <strong id="completedCount">
+                        0
+                    </strong>
+
+                    <span class="box-description">
+                        nicely done
+                    </span>
+
+                </div>
+
+
+                <!-- REMAINING -->
+
+                <div class="info-box remaining-box">
+
+                    <span class="box-label">
+                        LEFT TO DO
+                    </span>
+
+                    <strong id="remainingCount">
+                        0
+                    </strong>
+
+                    <span class="box-description">
+                        keep going
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             ADD TASK
+        =============================== -->
+
+        <section class="new-task">
+
+            <div class="new-task-heading">
+
+                <span class="pencil">
+                    +
+                </span>
+
+                <div>
+
+                    <h3>Add something new</h3>
+
+                    <p>
+                        What would you like to accomplish?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="task-input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="e.g. Finish my JavaScript practice..."
+                >
+
+                <button
+                    onclick="addTask()"
+                    class="add-task-btn"
+                >
+                    Add task
+                </button>
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             TASKS
+        =============================== -->
+
+        <section class="tasks-section">
+
+            <div class="tasks-top">
+
+                <div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Your tasks
+                    </h2>
+
+                </div>
+
+
+                <div class="filter-section">
+
+                    <button
+                        onclick="showAll()"
+                        class="filter-btn active-filter"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        onclick="showPending()"
+                        class="filter-btn"
+                    >
+                        Pending
+                    </button>
+
+                    <button
+                        onclick="showCompleted()"
+                        class="filter-btn"
+                    >
+                        Done
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TASK HEADER -->
+
+            <div class="task-header">
+
+                <div>
+                    TASK
+                </div>
+
+                <div>
+                    DATE
+                </div>
+
+                <div>
+                    STATUS
+                </div>
+
+                <div>
+                    ACTIONS
+                </div>
+
+            </div>
+
+
+            <!-- JAVASCRIPT WILL ADD TASKS HERE -->
+
+            <div id="taskList">
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ==============================
+             FOOTER
+        =============================== -->
+
+        <footer>
+
+            <div class="footer-line"></div>
+
+            <p>
+                Made for getting things done, one task at a time.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

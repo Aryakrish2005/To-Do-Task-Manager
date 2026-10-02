@@ -1,0 +1,1309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f5f1e8;
+
+    color: #26352d;
+
+    min-height: 100vh;
+
+    padding: 35px 20px;
+}
+
+
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.page {
+
+    max-width: 1080px;
+
+    margin: auto;
+
+    background: #fffdf8;
+
+    border: 1px solid #e4dfd3;
+
+    box-shadow:
+        0 8px 25px rgba(54, 52, 42, 0.08);
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+
+    min-height: 100px;
+
+    padding: 25px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e5e0d5;
+
+    background: #fffdf8;
+
+}
+
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.brand-mark {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #24483b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+
+    transform: rotate(-5deg);
+
+}
+
+
+.brand h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    letter-spacing: -1px;
+
+    color: #24483b;
+
+}
+
+
+.brand p {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #8b877d;
+
+}
+
+
+/* ==========================================
+   NAME AREA
+========================================== */
+
+.name-area {
+
+    text-align: right;
+
+}
+
+
+.small-label {
+
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #8a877f;
+
+    margin-bottom: 6px;
+
+}
+
+
+.name-input-area {
+
+    display: flex;
+
+    gap: 6px;
+
+}
+
+
+.name-input-area input {
+
+    width: 160px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #d9d3c6;
+
+    background: #fffefa;
+
+    color: #333;
+
+    outline: none;
+
+    font-size: 13px;
+
+}
+
+
+.name-input-area input:focus {
+
+    border-color: #24483b;
+
+}
+
+
+.save-name-btn {
+
+    border: none;
+
+    background: #24483b;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+
+}
+
+
+.save-name-btn:hover {
+
+    background: #17352b;
+
+}
+
+
+/* ==========================================
+   WELCOME
+========================================== */
+
+.welcome-section {
+
+    padding: 45px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #edf2e9;
+
+    border-bottom: 1px solid #dfe5da;
+
+}
+
+
+.date-label {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #778074;
+
+    margin-bottom: 10px;
+
+}
+
+
+.welcome-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-weight: normal;
+
+    font-size: 30px;
+
+    color: #24483b;
+
+}
+
+
+.welcome-text {
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    color: #72776e;
+
+}
+
+
+/* ==========================================
+   LITTLE NOTE
+========================================== */
+
+.little-note {
+
+    width: 145px;
+
+    padding: 18px;
+
+    background: #f4dfb6;
+
+    transform: rotate(2deg);
+
+    box-shadow:
+        3px 5px 10px rgba(80, 70, 50, 0.08);
+
+}
+
+
+
+.little-note img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.little-note p {
+
+    margin-top: 5px;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.4;
+
+    color: #614f36;
+
+}
+
+
+/* ==========================================
+   OVERVIEW
+========================================== */
+
+.overview {
+
+    padding: 35px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.section-title span {
+
+    font-size: 11px;
+
+    letter-spacing: 1.8px;
+
+    color: #8b877d;
+
+    white-space: nowrap;
+
+}
+
+
+.title-line {
+
+    height: 1px;
+
+    background: #ddd7ca;
+
+    flex: 1;
+
+}
+
+
+/* ==========================================
+   OVERVIEW GRID
+========================================== */
+
+.overview-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 10px;
+
+}
+
+
+.info-box {
+
+    min-height: 125px;
+   
+    padding: 18px;
+
+    background: #f8f5ee;
+
+    border: 1px solid #e5dfd3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+}
+
+
+
+.info-box:nth-child(2) {
+    border-top: 3px solid #24483b;
+}
+
+.info-box:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(60, 55, 45, 0.08);
+
+}
+
+
+.box-label {
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #89857b;
+
+    margin-bottom: 10px;
+
+}
+
+
+.info-box strong {
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    color: #24483b;
+
+}
+
+
+.box-description {
+
+    font-size: 11px;
+
+    color: #969188;
+
+    margin-top: 4px;
+
+}
+
+
+/* ==========================================
+   DATE
+========================================== */
+
+.date-box label {
+
+    font-size: 12px;
+
+    color: #77736b;
+
+    margin-bottom: 7px;
+
+}
+
+
+.date-box input {
+
+    width: 100%;
+
+    padding: 9px;
+
+    border: 1px solid #d9d3c7;
+
+    background: white;
+
+    outline: none;
+
+    color: #444;
+
+}
+
+
+.date-box input:focus {
+
+    border-color: #24483b;
+    
+
+}
+
+
+/* ==========================================
+   COMPLETED
+========================================== */
+
+.completed-box {
+
+    border-top: 3px solid #6b9272;
+
+}
+
+
+/* ==========================================
+   REMAINING
+========================================== */
+
+.remaining-box {
+
+    border-top: 3px solid #c56b48;
+
+}
+
+
+/* ==========================================
+   NEW TASK
+========================================== */
+
+.new-task {
+
+    margin: 0 35px 35px;
+
+    padding: 25px;
+
+    background: #f1e8d8;
+
+    border-left: 4px solid #c56b48;
+
+}
+
+
+.new-task-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.pencil {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #c56b48;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+}
+
+
+.new-task-heading h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    color: #403c35;
+
+}
+
+
+.new-task-heading p {
+
+    font-size: 12px;
+
+    color: #858078;
+
+    margin-top: 3px;
+
+}
+
+
+.task-input-area {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+#taskInput {
+
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #d6cdbd;
+
+    background: #fffdf9;
+
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+
+#taskInput:focus {
+
+    border-color: #c56b48;
+
+    box-shadow:
+        0 0 0 2px rgba(197, 107, 72, 0.08);
+
+}
+
+
+#taskInput::placeholder {
+
+    color: #aaa49a;
+
+}
+
+
+.add-task-btn {
+
+    padding: 13px 22px;
+
+    border: none;
+
+    background: #24483b;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+
+}
+
+
+.add-task-btn:hover {
+
+    background: #17352b;
+
+}
+
+
+.add-task-btn:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* ==========================================
+   TASK SECTION
+========================================== */
+
+.tasks-section {
+
+    margin: 0 35px 35px;
+
+}
+
+
+.tasks-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tasks-top > div:first-child {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.section-number {
+
+    font-size: 11px;
+
+    color: #c56b48;
+
+    font-weight: bold;
+
+}
+
+
+.tasks-top h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    color: #24483b;
+
+}
+
+
+/* ==========================================
+   FILTERS
+========================================== */
+
+.filter-section {
+
+    display: flex;
+
+    gap: 5px;
+
+}
+
+
+.filter-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #8a867e;
+
+    padding: 7px 11px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.2s;
+
+}
+
+
+.filter-btn:hover {
+
+    color: #24483b;
+
+}
+
+
+.active-filter {
+
+    color: #24483b;
+
+    border-bottom-color: #c56b48;
+
+}
+
+
+/* ==========================================
+   TASK HEADER
+========================================== */
+
+.task-header {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        140px
+        110px
+        190px;
+
+    padding: 12px 15px;
+
+    background: #24483b;
+
+    color: #f5f1e8;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* ==========================================
+   TASK ROW
+========================================== */
+
+.task-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        140px
+        110px
+        190px;
+
+    align-items: center;
+
+    min-height: 58px;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #e8e3d9;
+
+    background: #fffdf8;
+
+    font-size: 13px;
+
+    transition:
+        background 0.2s,
+        padding-left 0.2s;
+
+}
+
+
+.task-row:hover {
+
+    background: #f7f3eb;
+
+    padding-left: 19px;
+
+}
+
+
+/* ==========================================
+   TASK TITLE
+========================================== */
+
+.task-title {
+
+    color: #45423d;
+
+    padding-right: 15px;
+
+}
+
+
+/* ==========================================
+   DATE
+========================================== */
+
+.task-date {
+
+    color: #8b877f;
+
+    font-size: 12px;
+
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.status.pending {
+
+    color: #c56b48;
+
+}
+
+
+.status.completed {
+
+    color: #5c8867;
+
+}
+
+
+/* ==========================================
+   COMPLETED TASK
+========================================== */
+
+.completed-row {
+
+    background: #f0f5ee;
+
+}
+
+
+.completed-row .task-title {
+
+    text-decoration: line-through;
+
+    color: #92978f;
+
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 5px;
+
+}
+
+
+.action-buttons button {
+
+    border: 1px solid transparent;
+
+    padding: 6px 9px;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    transition: 0.2s;
+
+}
+
+
+.complete-btn {
+
+    background: #e1eee3;
+
+    color: #467151;
+
+}
+
+
+.complete-btn:hover {
+
+    background: #cfe2d2;
+
+}
+
+
+.edit-btn {
+
+    background: #f6e7bd;
+
+    color: #7b6230;
+
+}
+
+
+.edit-btn:hover {
+
+    background: #eed99f;
+
+}
+
+
+.delete-btn {
+
+    background: #f1d6ce;
+
+    color: #9d513c;
+
+}
+
+
+.delete-btn:hover {
+
+    background: #e9c0b4;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    padding: 0 35px 30px;
+
+    text-align: center;
+
+}
+
+
+.footer-line {
+
+    height: 1px;
+
+    background: #e2ddd3;
+
+    margin-bottom: 15px;
+
+}
+
+
+footer p {
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    font-style: italic;
+
+    color: #9a958b;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .overview-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .task-header,
+    .task-row {
+
+        grid-template-columns:
+            1fr
+            120px
+            100px
+            170px;
+
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+
+    .header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .name-area {
+
+        width: 100%;
+
+        text-align: left;
+
+    }
+
+
+    .name-input-area {
+
+        width: 100%;
+
+    }
+
+
+    .name-input-area input {
+
+        flex: 1;
+
+    }
+
+
+    .welcome-section {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .little-note {
+
+        display: none;
+
+    }
+
+
+    .overview {
+
+        padding: 25px;
+
+    }
+
+
+    .overview-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .new-task {
+
+        margin-left: 25px;
+
+        margin-right: 25px;
+
+    }
+
+
+    .tasks-section {
+
+        margin-left: 25px;
+
+        margin-right: 25px;
+
+    }
+
+
+    .task-header {
+
+        display: none;
+
+    }
+
+
+    .task-row {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 7px;
+
+        padding: 16px;
+
+    }
+
+
+    .action-buttons {
+
+        margin-top: 5px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 500px) {
+
+    body {
+
+        padding: 0;
+
+    }
+
+
+    .page {
+
+        border: none;
+
+    }
+
+
+    .header {
+
+        padding: 22px;
+
+    }
+
+
+    .brand h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .welcome-section {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .welcome-section h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .overview {
+
+        padding: 22px;
+
+    }
+
+
+    .overview-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .new-task {
+
+        margin: 0 22px 25px;
+
+    }
+
+
+    .task-input-area {
+
+        flex-direction: column;
+
+    }
+
+
+    .add-task-btn {
+
+        width: 100%;
+
+    }
+
+
+    .tasks-section {
+
+        margin-left: 22px;
+
+        margin-right: 22px;
+
+    }
+
+
+    .tasks-top {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+    }
+
+
+    footer {
+
+        padding-left: 22px;
+
+        padding-right: 22px;
+
+    }
+
+}
