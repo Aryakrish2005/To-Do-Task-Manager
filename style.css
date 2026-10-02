@@ -740,52 +740,29 @@ body {
 /* ==========================================
    FILTERS
 ========================================== */
-
 .filter-section {
-
     display: flex;
-
     gap: 5px;
-
 }
-
 
 .filter-btn {
-
+    background: none;
     border: none;
-
-    background: transparent;
-
-    color: #8a867e;
-
-    padding: 7px 11px;
-
-    cursor: pointer;
-
-    font-size: 12px;
-
     border-bottom: 2px solid transparent;
-
-    transition: 0.2s;
-
+    padding: 12px 14px;
+    color: #777;
+    cursor: pointer;
 }
 
+.filter-btn:focus {
+    color: #24483b;
+    border-bottom: 2px solid #c56b48;
+    outline: none;
+}
 
 .filter-btn:hover {
-
     color: #24483b;
-
 }
-
-
-.active-filter {
-
-    color: #24483b;
-
-    border-bottom-color: #c56b48;
-
-}
-
 
 /* ==========================================
    TASK HEADER
